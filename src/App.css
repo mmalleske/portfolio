@@ -1,38 +1,119 @@
 .App {
-  text-align: center;
+  font-family: 'Work Sans', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mm-background {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background-color: aqua;
+  z-index: -1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mm-nav {
+  position: fixed;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mm-nav__inner {
+  background: linear-gradient(225deg, black 6ch, rgba(0,0,0,0) 6.05ch);
+  color: white;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: right;
+  height: 130px;
+  padding: 16px;
+}
+
+.mm-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100%;
+  margin-left: 10%;
+  color: #fff;
+  height: 100vh;
+  max-width: 80%;
 }
 
-.App-link {
-  color: #61dafb;
+.mm-container h1 {
+  animation: letter-spacing 1s forwards, fade-in 1s forwards;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.mm-title {
+  text-transform: uppercase;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  animation: letter-spacing 1s forwards, fade-in 1s forwards;
+}
+
+.mm-title__profession {
+  text-align: right;
+}
+
+.mm-title__divider {
+  content: " ";
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+  animation: grow-horizontal 1s forwards;
+}
+
+.mm-background .sphere {
+  display: block;
+  background: black;
+  border-radius: 50%;
+  height: 100vh;
+  width: 100vh;
+  margin: 0;
+  position: absolute;
+  top: -25vh;
+  right: -25vh;
+  background: radial-gradient(circle at 100px 100px, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  box-shadow: 18px 18px 36px rgba(0, 0, 0, 0.5);
+}
+
+/* carousel */
+.mm-carousel {
+  margin-top: 20px;
+}
+.mm-carousel-image {
+  margin-bottom: 40px;
+}
+
+.mm-carousel-image img {
+  width: 100%;
+}
+
+/* animations */
+@keyframes grow-horizontal {
+  0% {
+    width: 0%;
   }
-  to {
-    transform: rotate(360deg);
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes letter-spacing {
+  0% {
+    letter-spacing: inherit;
+  }
+
+  100% {
+    letter-spacing: 8px;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
   }
 }
