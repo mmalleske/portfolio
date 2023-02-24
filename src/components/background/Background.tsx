@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Carousel } from 'antd';
 import ContentSlide from "./ContentSlide";
+import "./Background.css";
 
 interface BackgroundProps {
 }
@@ -21,17 +22,8 @@ const Background: React.FC<BackgroundProps> = ({ }) => {
             <div style={{ backgroundColor: `rgb(${bgColor}, 115, 126)` }} className="mm-background" >
                 <figure className="sphere" />
             </div>
-            <nav className="mm-nav">
-                <div className="mm-nav__inner"></div>
-            </nav>
-            <section className="mm-container mm-container__title">
-                <div className="mm-title">
-                    <h1 className="mm-title__name">Michael Malleske</h1>
-                    <div className="mm-title__divider" />
-                    <h1 className="mm-title__profession">Software Developer</h1>
-                </div>
-            </section>
-            <section className="mm-container mm-container__skills">
+            {/*
+            <section className="mm-container mm-skills">
                 <h1>Skills + Proficiencies</h1>
                 <div className="mm-title__divider" />
                 <ul>
@@ -68,6 +60,7 @@ const Background: React.FC<BackgroundProps> = ({ }) => {
                     </div>
                 </Carousel>
             </section>
+            */}
         </div>
     );
 };

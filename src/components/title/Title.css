@@ -1,0 +1,20 @@
+.mm-title {
+  text-transform: uppercase;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  animation: letter-spacing 1s forwards, fade-in 1s forwards;
+}
+
+.mm-title__profession {
+  text-align: right;
+}
+
+.mm-title__divider {
+  content: " ";
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+  animation: grow-horizontal 1s forwards;
+}

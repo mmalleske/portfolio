@@ -9,9 +9,9 @@ const ContentSlide: React.FC<ContentSlideProps> = ({ reverse = false }) => {
 
 
     return (
-        <Row>
-          <Col span={12}>Image</Col>
-          <Col span={12}>Content</Col>
+        <Row className="mm-content-slide">
+          <Col className="mm-content-slide__image" span={12}>Image</Col>
+          <Col className="mm-content-slide__description" span={12}>Content</Col>
         </Row>
     );
 };
