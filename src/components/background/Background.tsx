@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Carousel } from 'antd';
-import ContentSlide from "./ContentSlide";
 import "./Background.css";
 
 interface BackgroundProps {
@@ -23,27 +22,6 @@ const Background: React.FC<BackgroundProps> = ({ }) => {
                 <figure className="sphere" />
             </div>
             {/*
-            <section className="mm-container mm-skills">
-                <h1>Skills + Proficiencies</h1>
-                <div className="mm-title__divider" />
-                <ul>
-                    <li>React/Redux/RTKQuery</li>
-                    <li>JavaScript/Typescript</li>
-                    <li>Php/Laravel</li>
-                    <li>Ruby/Rails</li>
-                    <li>Node.js/Ember.js</li>
-                    <li>C#</li>
-                </ul>
-                <ul>
-                    <li>SQL/MongoDB</li>
-                    <li>Docker</li>
-                    <li>Unity 3D/Unreal Engine</li>
-                    <li>Photoshop</li>
-                    <li>AWS</li>
-                    <li>Apache Airflow</li>
-                    <li>gRPC</li>
-                </ul>
-            </section>
             <section className="mm-container mm-container__skills">
                 <h1>Ojo Labs</h1>
                 <div className="mm-title__divider" />

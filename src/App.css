@@ -13,6 +13,11 @@
   max-width: 80%;
 }
 
+.mm-animated-title {
+  text-transform: uppercase;
+  animation: letter-spacing 1s forwards, fade-in 1s forwards;
+}
+
 .mm-background .sphere {
   display: block;
   background: black;
