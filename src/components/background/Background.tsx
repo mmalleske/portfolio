@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Carousel } from 'antd';
+import ContentSlide from "./ContentSlide";
 
 interface BackgroundProps {
 }
@@ -55,6 +56,7 @@ const Background: React.FC<BackgroundProps> = ({ }) => {
                 <h1>Ojo Labs</h1>
                 <div className="mm-title__divider" />
                 <Carousel className='mm-carousel'>
+                    <ContentSlide />
                     <div className="mm-carousel-image">
                         <img src="./assets/images/digs01.png" />
                     </div>
