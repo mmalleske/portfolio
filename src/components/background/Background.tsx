@@ -25,7 +25,7 @@ const Background: React.FC<BackgroundProps> = ({ }) => {
             </nav>
             <section className="mm-container mm-container__title">
                 <div className="mm-title">
-                    <h1 className="mm-title__name">Mike Malleske</h1>
+                    <h1 className="mm-title__name">Michael Malleske</h1>
                     <div className="mm-title__divider" />
                     <h1 className="mm-title__profession">Software Developer</h1>
                 </div>
