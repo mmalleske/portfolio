@@ -28,7 +28,7 @@ const Background: React.FC<BackgroundProps> = ({ }) => {
                 <Carousel className='mm-carousel'>
                     <ContentSlide />
                     <div className="mm-carousel-image">
-                        <img src="./assets/images/digs01.png" />
+                        <img src="./images/digs01.png" />
                     </div>
                     <div className="mm-carousel-image">
                         <img src="./assets/images/digs02.png" />
