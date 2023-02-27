@@ -1,5 +1,6 @@
 .App {
   font-family: 'Work Sans', sans-serif;
+  scroll-behavior:unset;
 }
 
 .mm-section {
@@ -11,26 +12,15 @@
   color: #fff;
   height: 100vh;
   max-width: 80%;
+  animation: fade-in 1s forwards;
 }
 
 .mm-animated-title {
   text-transform: uppercase;
-  animation: letter-spacing 1s forwards, fade-in 1s forwards;
+  animation: letter-spacing 1s forwards;
 }
 
-.mm-background .sphere {
-  display: block;
-  background: black;
-  border-radius: 50%;
-  height: 100vh;
-  width: 100vh;
-  margin: 0;
-  position: absolute;
-  top: -25vh;
-  right: -25vh;
-  background: radial-gradient(circle at 100px 100px, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
-  box-shadow: 18px 18px 36px rgba(0, 0, 0, 0.5);
-}
+
 
 /* carousel */
 .mm-carousel {
@@ -44,20 +34,11 @@
   width: 100%;
 }
 
-/* content slide */
-.mm-content-slide__image {
-
-}
-
-.mm-content-slide__description {
-
-}
-
-.mm-content-slide__image, .mm-content-slide__description {
+/* .mm-content-slide__image, .mm-content-slide__description {
   height: 240px;
   width: 45%;
   background-color: #fff;
-}
+} */
 
 
 /* animations */

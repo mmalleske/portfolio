@@ -1,0 +1,17 @@
+.mm-content-slide {
+    justify-content: space-between;
+    padding: 5%;
+    height: 100vh;
+    align-content: center;
+
+    &__image, &__description {
+        max-width: 45%;
+        // background-color: #fff;
+    }
+
+    &__image {
+        img {
+            width: 100%;
+        }
+    }
+}
