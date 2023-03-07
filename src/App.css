@@ -3,24 +3,10 @@
   scroll-behavior:unset;
 }
 
-.mm-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  margin-left: 10%;
-  color: #fff;
-  height: 100vh;
-  max-width: 80%;
-  animation: fade-in 1s forwards;
-}
-
-.mm-animated-title {
+/* .mm-animated-title {
   text-transform: uppercase;
   animation: letter-spacing 1s forwards;
-}
-
-
+} */
 
 /* carousel */
 .mm-carousel {

@@ -1,4 +1,6 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React from 'react';
+import Section from '../section/Section';
+import Divider from '../divider/Divider';
 import "./Title.scss";
 
 interface TitleProps {
@@ -6,13 +8,14 @@ interface TitleProps {
 
 const Title: React.FC<TitleProps> = ({ }) => {
 
-    return (
-        <section className="mm-section mm-title">
-          <h1 className="mm-title__name">Michael Malleske</h1>
-          <div className="mm-title__divider" />
-          <h1 className="mm-title__profession">Software Developer</h1>
-        </section>
-    );
+  return (
+    <Section classNames='mm-title'>
+      <h1 className="mm-title__name">Michael Malleske</h1>
+      <Divider />
+      <h1 className="mm-title__profession">Software Developer</h1>
+    </Section>
+
+  );
 };
 
 export default Title;

@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import logo from './logo.svg';
+import { Carousel } from 'antd';
 import './App.css';
 import Background from './components/background/Background';
 import Nav from './components/nav/Nav';
@@ -12,9 +12,12 @@ function App() {
   const [sectionIndex, setSectionIndex] = useState(0);
 
   const sections = [
-    <ContentSlide />, 
-    <Title />, 
-    <SkillsSection />, 
+    <ContentSlide
+      title='Ojo Labs'
+      body='At Ojo labs I was a fullstack developer working on the homeowner app.'
+    />,
+    <Title />,
+    <SkillsSection />,
     <ContentSlide />
   ];
 
@@ -56,12 +59,15 @@ function App() {
   }, [sectionIndex]);
 
   return (
-    <div className="App" onWheel={handleUIEvent}>
+    <div className="App">
       <Background />
-      <Nav />
-
-      {displayedSection}
-
+      {/* <Nav /> */}
+      <Title />
+      <SkillsSection />
+      <ContentSlide
+        title='Ojo Labs'
+        body='At Ojo labs I was a fullstack developer working on the homeowner app.'
+      />
     </div>
   );
 }

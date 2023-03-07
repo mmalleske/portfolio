@@ -1,19 +1,19 @@
-import React, { useRef, useEffect, useState } from 'react';
-import "./Section.css";
+import React, { PropsWithChildren } from 'react';
+import "./Section.scss";
 
 interface SectionProps {
-  className?: string;
-  props: any;
+  classNames?: string;
 }
 
-const Section: React.FC<SectionProps> = ({ className, props}) => {
+const Section: React.FC<PropsWithChildren<SectionProps>> = ({classNames, ...props}) => {
 
-
-    return (
-        <div className={`mm-section ${className}`}>
-          {props.children}
-        </div>
-    );
+  return (
+    <div className={`mm-section ${classNames}`}>
+      <div className="mm-section__inner">
+        {props.children}
+      </div>
+    </div>
+  );
 };
 
 export default Section;

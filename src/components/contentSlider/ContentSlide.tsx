@@ -21,7 +21,8 @@ const ContentSlide: React.FC<ContentSlideProps> = ({
       {!reverse ? (
         <>
           <Col className="mm-content-slide__image" span={12}>
-            <img alt="career" src={require('../../assets/images/digs01.png')} />
+            {/* <img alt="career" src={require('../../assets/images/digs01.png')} /> */}
+            <iframe src="https://giphy.com/embed/RbDKaczqWovIugyJmW" width="480" height="270" frameBorder="0" className="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/looneytunesworldofmayhem-world-of-mayhem-looney-tunes-ltwom-RbDKaczqWovIugyJmW">via GIPHY</a></p>
           </Col>
           <Col className="mm-content-slide__description" span={12}>
             <h1>{title}</h1>

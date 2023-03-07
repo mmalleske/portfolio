@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Carousel } from 'antd';
-import "./Background.css";
+import "./Background.scss";
 
 interface BackgroundProps {
 }
