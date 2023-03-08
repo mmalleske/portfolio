@@ -2,9 +2,11 @@ import React, { useState, useMemo } from 'react';
 import { Carousel } from 'antd';
 import './App.css';
 import Background from './components/background/Background';
+import Section from './components/section/Section';
 import Nav from './components/nav/Nav';
 import Title from "./components/title/Title";
 import SkillsSection from "./components/skillsSection/SkillsSection";
+import WorkSection from './components/workSection/WorkSection';
 import ContentSlide from './components/contentSlider/ContentSlide';
 
 function App() {
@@ -60,14 +62,11 @@ function App() {
 
   return (
     <div className="App">
-      <Background />
+      {/* <Background /> */}
       {/* <Nav /> */}
-      <Title />
+      <Title />      
       <SkillsSection />
-      <ContentSlide
-        title='Ojo Labs'
-        body='At Ojo labs I was a fullstack developer working on the homeowner app.'
-      />
+      <WorkSection />
     </div>
   );
 }

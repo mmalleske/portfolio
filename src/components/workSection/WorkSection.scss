@@ -1,0 +1,73 @@
+.mm-work {
+    display: flex;
+    position: relative;
+
+    &__title {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        font-size: 48px;
+
+        h2 {
+            background: #485696;
+            padding: 1% 2%;
+            color: white;
+            z-index: 1;
+            margin-top: 48px;
+        }
+    }
+
+    &__subtitle {
+        text-align: center;
+        font-size: 28px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+
+        h3 {
+            padding: 10px 20px;
+            color: #485696;
+            border: 1px solid #485696;
+            font-weight: 300;
+            letter-spacing: 3px;
+        }
+    }
+
+    &__divider-x {
+        content: " ";
+        height: 2px;
+        width: 100%;
+        background-color: #485696;
+        animation: grow-horizontal 1s forwards;
+        position: absolute;
+        top: 50%;
+    }
+
+    &__divider-y {
+        content: " ";
+        height: 100vh;
+        width: 5px;
+        position: absolute;
+        background-image: linear-gradient(to bottom, #485696 15%, rgba(255, 255, 255, 0) 0%);
+        background-position: left;
+        background-size: 5px 30px;
+        top: 48px;
+        background-repeat: repeat-y;
+    }
+
+    &__gallery {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        width: 100%;
+        align-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+
+        &__card {            
+            margin: 24px;            
+        }
+    }
+}

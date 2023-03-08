@@ -8,7 +8,7 @@ interface SectionProps {
 const Section: React.FC<PropsWithChildren<SectionProps>> = ({classNames, ...props}) => {
 
   return (
-    <div className={`mm-section ${classNames}`}>
+    <div className={`mm-section ${classNames || ""}`}>
       <div className="mm-section__inner">
         {props.children}
       </div>

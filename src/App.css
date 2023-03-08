@@ -1,12 +1,15 @@
+/* font-family: 'Archivo Black', sans-serif;
+font-family: 'Rubik Mono One', sans-serif;
+font-family: 'Tilt Warp', cursive; */
+
 .App {
-  font-family: 'Work Sans', sans-serif;
   scroll-behavior:unset;
 }
 
-/* .mm-animated-title {
-  text-transform: uppercase;
-  animation: letter-spacing 1s forwards;
-} */
+.App section {
+  height: 100vh;
+  overflow-y: hidden;
+}
 
 /* carousel */
 .mm-carousel {
