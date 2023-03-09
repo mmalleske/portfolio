@@ -1,6 +1,7 @@
 .mm-work {
     display: flex;
     position: relative;
+    background-color: #f7f7f7;
 
     &__title {
         position: absolute;
@@ -69,5 +70,11 @@
         &__card {            
             margin: 24px;            
         }
+    }
+}
+
+.mm-slider {
+    .slick-dots-bottom {
+        bottom: -100px;
     }
 }
