@@ -78,4 +78,17 @@
     &__tools {
         background-color: #e7e7e7;
     }
+
+    @media (max-width: 820px) {
+
+        &__subtitle {
+            font-size: 20px;
+        }
+
+        &__languages, &__tools {
+            ul {
+                font-size: 16px;
+            }
+        }
+    }
 }
