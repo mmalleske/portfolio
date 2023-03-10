@@ -29,17 +29,32 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
   }
 
   &__name {
     color: #fff;
     background-color: #485696;
     text-align: right;
+    
+
+    h1 {
+      // transform: translateX(2000px);
+      animation: slideFromRight 1s forwards;
+    }
+    
   }
 
   &__profession {
     color: #000;
     background-color: #F9C784;
+
+    h1 {
+      // transform: translateX(-2000px);
+      animation: slideFromLeft 2s forwards;
+      // animation-delay: 1s;
+    }
+    
   }
 
 }

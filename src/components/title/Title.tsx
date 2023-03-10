@@ -18,10 +18,10 @@ const Title: React.FC<TitleProps> = () => {
   const TitleV2 = () => (
     <section className="mm-title-v2">
       <div className="mm-title-v2__name">
-        <h1>Michael Malleske</h1>
+        <h1>Michael<br /> Malleske</h1>
       </div>
       <div className="mm-title-v2__profession">
-        <h1>Software Developer</h1>
+        <h1>Software<br /> Developer</h1>
       </div>
     </section>
   )

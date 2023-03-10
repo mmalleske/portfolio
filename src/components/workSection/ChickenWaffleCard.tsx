@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Card, Modal, Carousel } from 'antd';
+import YouTube from 'react-youtube';
+
 
 interface ChickenWaffleCardProps {
 }
@@ -20,6 +22,17 @@ const ChickenWaffleCard: React.FC<ChickenWaffleCardProps> = () => {
         setIsModalOpen(false);
     };
 
+    const opts = {
+        height: '210',
+        width: '455',
+        playerVars: {
+            autoplay: 0,
+            defer: true,
+            loading: "lazy",
+            async: true
+        },
+    };
+
     return (
         <>
             <Card
@@ -34,7 +47,7 @@ const ChickenWaffleCard: React.FC<ChickenWaffleCardProps> = () => {
             <Modal destroyOnClose title="Chicken Waffle Studios" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
                 <div className="mm-slide">
                     <div className="mm-slide__header">
-                        <iframe width="455" height="210" src="https://www.youtube.com/embed/xA-w7bLQ6Dk" title="Chicken Waffle Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                        <YouTube opts={opts} videoId="xA-w7bLQ6Dk" />
                     </div>
                     <div className="mm-slide__description">
                         <p>At <b>Chicken Waffle</b> I built XR games and apps using <b>C#</b> and the <b>Unity Engine.</b> Among my contributions were an AI chat bot, multiplayer features for <b>Baby Hands,</b> and a children's music game for which I also wrote the music and sound design. </p>

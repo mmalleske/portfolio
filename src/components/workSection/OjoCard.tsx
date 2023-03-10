@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Card, Modal, Carousel } from 'antd';
+import YouTube from 'react-youtube';
 
 interface OjoCardProps {
 }
@@ -20,6 +21,17 @@ const OjoCard: React.FC<OjoCardProps> = () => {
         setIsModalOpen(false);
     };
 
+    const opts = {
+        height: '210',
+        width: '455',
+        playerVars: {
+            autoplay: 0,
+            defer: true,
+            loading: "lazy",
+            async: true
+        },
+    };
+
     return (
         <>
             <Card
@@ -31,11 +43,11 @@ const OjoCard: React.FC<OjoCardProps> = () => {
             >
                 <Card.Meta title="Ojo Labs" />
             </Card>
-            <Modal  destroyOnClose title="Ojo Labs" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+            <Modal destroyOnClose title="Ojo Labs" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
                 <Carousel className="mm-slider">
                     <div className="mm-slide">
                         <div className="mm-slide__header">
-                            <iframe width="455" height="210" src="https://www.youtube.com/embed/7otxRER8J1E" title="Ojo Homeowner Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                            <YouTube opts={opts} videoId="7otxRER8J1E" />
                         </div>
                         <div className="mm-slide__description">
                             <p>At <b>Ojo Labs</b> I was a fullstack developer on our <b>Homeowner</b> product - a tool to help users track their home's value, manage home maintenance and find local service providers. Our primary tech stack was <b>React/Typescript</b> frontend and <b>Php/Laravel</b> backend.</p>

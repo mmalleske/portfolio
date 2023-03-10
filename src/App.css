@@ -61,12 +61,34 @@ font-family: 'Tilt Warp', cursive; */
   }
 }
 
-@@keyframes slideInFromBottom {
+@keyframes slideInFromBottom {
   0% {
     opacity: 0;
   }
 
   100% {
     opacity: 100%;
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(2000px);
+  }
+
+  100% {
+    letter-spacing: translateX(0);
+  }
+}
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-2000px);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    letter-spacing: translateX(0);
   }
 }

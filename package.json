@@ -92,6 +92,7 @@
   },
   "devDependencies": {
     "gh-pages": "5.0.0",
+    "react-youtube": "10.1.0",
     "sass": "1.58.3",
     "url-loader": "4.1.1"
   },
