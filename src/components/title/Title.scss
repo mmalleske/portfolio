@@ -49,8 +49,8 @@
 
     h1 {
       // transform: translateX(-2000px);
-      animation: slideFromLeft 2s forwards;
-      // animation-delay: 1s;
+      animation: slideFromLeft 1s backwards;
+      animation-delay: 0.5s;
     }
     
   }

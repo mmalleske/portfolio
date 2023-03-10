@@ -8,6 +8,8 @@ import Title from "./components/title/Title";
 import SkillsSection from "./components/skillsSection/SkillsSection";
 import WorkSection from './components/workSection/WorkSection';
 import ContentSlide from './components/contentSlider/ContentSlide';
+import LazyLoad from 'react-lazy-load';
+
 
 function App() {
 
@@ -22,11 +24,6 @@ function App() {
     <SkillsSection />,
     <ContentSlide />
   ];
-
-  // const onChangeSectionIndex = () => {
-  //   setSectionIndex(1);
-  //   console.log(sectionIndex, 'foo')
-  // }
 
   const handleUIEvent = (e: any) => {
     let ready = true;
@@ -64,9 +61,13 @@ function App() {
     <div className="App">
       {/* <Background /> */}
       {/* <Nav /> */}
-      <Title />      
-      <SkillsSection />
-      <WorkSection />
+      <Title />
+      <LazyLoad height={'100vh'} width={'100%'} threshold={0.5}>
+        <SkillsSection />
+      </LazyLoad>
+      <LazyLoad height={'100vh'} width={'100%'} threshold={0.5}>
+        <WorkSection />
+      </LazyLoad>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
+import LazyLoad from 'react-lazy-load';
 import "./SkillsSection.scss";
 
 interface SkillsSectionProps {
@@ -41,7 +42,6 @@ const SkillsSection: React.FC<SkillsSectionProps> = ({ }) => {
                     <li>gRPC</li>
                 </ul>
             </div>
-
         </section>
     );
 };
