@@ -87,9 +87,6 @@
     &__profession {
       text-align: right;
     }
-
-    
-
   }
 
   @media (max-width: 600px) {
@@ -100,6 +97,33 @@
 
     &__link {
       margin: 0 6px;
+
+      &:first-child {
+        height: 100px;
+      }
+
+      &:nth-child(2) {
+        height: 150px;
+      }
+      &:nth-child(3) {
+        height: 200px;
+  
+        p {
+          margin-bottom: 100px;
+        }
+      }
+  
+      &:nth-child(4) {
+        height: 250px;
+  
+        p {
+          margin-bottom: 90px;
+        }
+      }
+  
+      &:nth-child(5) {
+        height: 150px;
+      }
     }
   }
 }

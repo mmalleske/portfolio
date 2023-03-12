@@ -13,7 +13,6 @@ function App() {
 
   const youtubeOptions = {
     height: '220',
-    width: '400',
     playerVars: {
       autoplay: 0,
       defer: true,
@@ -29,7 +28,7 @@ function App() {
     },
     {
       description: <p>Among the many contributions I made during my time at Ojo was the <b>Announcement Engine</b> - a service that gathered data points based on the current market as well as the individual user to deliver personalized and meaningful notifications to our consumers.</p>,
-      content: <img width="455" alt="ojo-demo" src={require("./assets/images/digs01-2.png")} />
+      content: <img  alt="ojo-demo" src={require("./assets/images/digs01-2.png")} />
     },
     {
       description: <p>I also helped build our <b>Maintenance Checklist</b> feature, which integrates with <b>Thumbtack</b> to provide realtime maintenance suggestions specific to your home and local provider recommendations.</p>,
@@ -37,7 +36,7 @@ function App() {
     },
     {
       description: <p>Outside of the Homeowner app, I also built internal tools to integrate my team's application into the greater Ojo ecosystem. One of these tools utilized RabbitMQ to listen to user interactions with our agents, or "events", and sent out automated invites to our platform. The event system also allowed us to gather insightful analytics.</p>,
-      content: <img width="455" alt="ojo-demo" src={require("./assets/images/digs-et.jpg")} />
+      content: <img  alt="ojo-demo" src={require("./assets/images/digs-et.jpg")} />
     }
   ];
 
@@ -48,7 +47,7 @@ function App() {
     },
     {
       description: <p>Among the many contributions I made during my time at Ojo was the <b>Announcement Engine</b> - a service that gathered data points based on the current market as well as the individual user to deliver personalized and meaningful notifications to our consumers.</p>,
-      content: <img width="455" alt="ojo-demo" src={require("./assets/images/digs01-2.png")} />
+      content: <img  alt="ojo-demo" src={require("./assets/images/digs01-2.png")} />
     },
     {
       description: <p>I also helped build our <b>Maintenance Checklist</b> feature, which integrates with <b>Thumbtack</b> to provide realtime maintenance suggestions specific to your home and local provider recommendations.</p>,
@@ -56,7 +55,7 @@ function App() {
     },
     {
       description: <p>Outside of the Homeowner app, I also built internal tools to integrate my team's application into the greater Ojo ecosystem. One of these tools utilized RabbitMQ to listen to user interactions with our agents, or "events", and sent out automated invites to our platform. The event system also allowed us to gather insightful analytics.</p>,
-      content: <img width="455" alt="ojo-demo" src={require("./assets/images/digs-et.jpg")} />
+      content: <img  alt="ojo-demo" src={require("./assets/images/digs-et.jpg")} />
     }
   ];
 
@@ -65,7 +64,7 @@ function App() {
       {/* <Nav /> */}
       <Title />
       <StoryLine id="skills" title='Ojo Labs' items={ojoItems} />
-      <StoryLine title='Ojo Labs' items={realSavvyItems} />
+      {/* <StoryLine title='Ojo Labs' items={realSavvyItems} /> */}
     </div>
   );
 }
