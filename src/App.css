@@ -1,9 +1,11 @@
 /* font-family: 'Archivo Black', sans-serif;
 font-family: 'Rubik Mono One', sans-serif;
 font-family: 'Tilt Warp', cursive; */
-
+html {
+  scroll-behavior:smooth;
+}
 .App {
-  scroll-behavior:unset;
+  scroll-behavior:smooth;
 }
 
 .App section {

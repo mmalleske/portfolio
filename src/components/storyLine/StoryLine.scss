@@ -1,5 +1,6 @@
 .mm-storyline {
     padding-bottom: 40px;
+    padding-top: 40px;
 
     &:nth-child(even) {
         background-color: #f7f7f7;
@@ -14,7 +15,6 @@
         background-color: #383A43;
         max-width: 50%;
         height: 52px;
-        margin-top: 40px;
         animation: fillFromLeft 1s backwards;
 
         h2 {

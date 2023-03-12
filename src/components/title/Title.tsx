@@ -34,7 +34,7 @@ const Title: React.FC<TitleProps> = () => {
       </div>
       <div className='mm-breadcrumb'>
         <a href="#skills">
-          <DownCircleOutlined style={{fontSize: "48px"}} />
+          <DownCircleOutlined style={{ fontSize: "48px" }} />
         </a>
       </div>
     </div>
