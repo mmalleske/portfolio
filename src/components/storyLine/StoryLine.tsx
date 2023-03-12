@@ -1,11 +1,13 @@
 import React from 'react';
 import { Col, Row } from 'antd';
 import LazyLoad from 'react-lazy-load';
+import Divider from '../divider/Divider';
 import "./StoryLine.scss";
 
 interface StoryLineProps {
     title?: string;
     items?: any;
+    id?: string;
 }
 
 export interface StoryLineItemProps {
@@ -13,14 +15,17 @@ export interface StoryLineItemProps {
     content: React.ReactNode;
 }
 
-const StoryLine: React.FC<StoryLineProps> = ({ items, title = "Ojo Labs" }) => {
+const StoryLine: React.FC<StoryLineProps> = ({ items, id, title = "Ojo Labs" }) => {
 
     return (
-        <div className="mm-storyline">
+        <div id={id} className="mm-storyline">
             <LazyLoad height={'100px'} width={'100%'} threshold={0.5}>
-                <div className="mm-storyline__title">
-                    <h2>{title}</h2>
-                </div>
+                <>
+                    <div className="mm-storyline__title">
+                        <h2>{title}</h2>
+                    </div>
+                    <Divider />
+                </>
             </LazyLoad>
             {items && items.map((item: StoryLineItemProps, index: number) => (
                 <LazyLoad height={'300px'} width={'100%'} threshold={0.5} key={`${title}-story-line-item-${index}`}>
@@ -72,7 +77,7 @@ const StoryLine: React.FC<StoryLineProps> = ({ items, title = "Ojo Labs" }) => {
                         </Row>
                     )}
                 </LazyLoad>
-            ))}            
+            ))}
         </div>
     );
 };

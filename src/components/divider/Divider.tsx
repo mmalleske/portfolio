@@ -1,9 +1,13 @@
 import React from 'react';
 import "./Divider.scss";
 
-const Divider = () => {
+interface DividerProps {
+    color?: string;
+}
+
+const Divider: React.FC<DividerProps> = ({color = "#696D7D" }) => {
     return (
-        <div className="mm-title__divider" />
+        <div style={{backgroundColor: color }} className="mm-divider" />
     );
 };
 
