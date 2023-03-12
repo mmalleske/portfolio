@@ -94,3 +94,13 @@ font-family: 'Tilt Warp', cursive; */
     letter-spacing: translateX(0);
   }
 }
+
+@keyframes fillFromLeft {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 50%;
+  }
+}

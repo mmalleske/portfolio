@@ -9,65 +9,42 @@ import SkillsSection from "./components/skillsSection/SkillsSection";
 import WorkSection from './components/workSection/WorkSection';
 import ContentSlide from './components/contentSlider/ContentSlide';
 import LazyLoad from 'react-lazy-load';
+import StoryLine from './components/storyLine/StoryLine';
 
 
 function App() {
 
-  const [sectionIndex, setSectionIndex] = useState(0);
+  const youtubeOptions = {
+    height: '300',
+    width: '400',
+    playerVars: {
+        autoplay: 0,
+        defer: true,
+        loading: "lazy",
+        async: true
+    },
+};
 
-  const sections = [
-    <ContentSlide
-      title='Ojo Labs'
-      body='At Ojo labs I was a fullstack developer working on the homeowner app.'
-    />,
-    <Title />,
-    <SkillsSection />,
-    <ContentSlide />
-  ];
-
-  const handleUIEvent = (e: any) => {
-    let ready = true;
-    let newSectionIndex = sectionIndex;
-
-    if (e.deltaY && ready) {
-      // console.log(e.deltaY)
-      if (e.deltaY > 100) {
-        if (sectionIndex < sections.length - 1) {
-          newSectionIndex += 1;
-          setSectionIndex(newSectionIndex);
-          ready = false;
-        }
-      }
-
-      if (e.deltaY < -100) {
-        if (sectionIndex >= 0) {
-          newSectionIndex -= 1;
-          setSectionIndex(newSectionIndex);
-          ready = false;
-        }
-      }
-
-      setTimeout(() => { ready = true; }, 1000)
+  const ojoItems = [
+    {
+      description: <p>At <b>Ojo Labs</b> I was a fullstack developer on our <b>Homeowner</b> product - a tool to help users track their home's value, manage home maintenance and find local service providers. Our primary tech stack was <b>React/Typescript</b> frontend and <b>Php/Laravel</b> backend.</p>,
+      content: <img alt="ojo-demo" src={require("./assets/images/digs01-2.png")} />
+    },
+    {
+      description: <p>At <b>Ojo Labs</b> I was a fullstack developer on our <b>Homeowner</b> product - a tool to help users track their home's value, manage home maintenance and find local service providers. Our primary tech stack was <b>React/Typescript</b> frontend and <b>Php/Laravel</b> backend.</p>,
+      content: <img alt="ojo-demo" src={require("./assets/images/digs01-2.png")} />
+    },
+    {
+      description: <p>At <b>Ojo Labs</b> I was a fullstack developer on our <b>Homeowner</b> product - a tool to help users track their home's value, manage home maintenance and find local service providers. Our primary tech stack was <b>React/Typescript</b> frontend and <b>Php/Laravel</b> backend.</p>,
+      content: <img alt="ojo-demo" src={require("./assets/images/digs01-2.png")} />
     }
-  };
-
-  const displayedSection = useMemo(() => {
-    return (
-      sections[sectionIndex]
-    )
-  }, [sectionIndex]);
+  ]
 
   return (
     <div className="App">
-      {/* <Background /> */}
       {/* <Nav /> */}
       <Title />
-      <LazyLoad height={'100vh'} width={'100%'} threshold={0.5}>
-        <SkillsSection />
-      </LazyLoad>
-      <LazyLoad height={'100vh'} width={'100%'} threshold={0.5}>
-        <WorkSection />
-      </LazyLoad>
+      <StoryLine title='Ojo Labs' items={ojoItems} />
     </div>
   );
 }
