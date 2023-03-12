@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Row } from 'antd';
 import LazyLoad from 'react-lazy-load';
 import Divider from '../divider/Divider';
-import { useWindowWidth } from '@react-hook/window-size'
+import { useWindowWidth } from '@react-hook/window-size';
 import "./StoryLine.scss";
 
 interface StoryLineProps {
@@ -17,18 +17,18 @@ export interface StoryLineItemProps {
 }
 
 const StoryLine: React.FC<StoryLineProps> = ({ items, id, title = "Ojo Labs" }) => {
-    
+
     const windowWidth = useWindowWidth();
 
     return (
         <div id={id} className="mm-storyline">
-            <LazyLoad height={'100px'} width={'100%'} threshold={0.5}>
-                <>
-                    <div className="mm-storyline__title">
-                        <h2>{title}</h2>
+            <LazyLoad height={'52px'} width={'100%'} threshold={0.5}>
+                <div className="mm-storyline__title">
+                    <div className="mm-storyline__title__inner">
+                        <h2>{title}</h2>                        
                     </div>
                     <Divider />
-                </>
+                </div>
             </LazyLoad>
             {items && items.map((item: StoryLineItemProps, index: number) => (
                 <LazyLoad height={windowWidth > 968 ? '300px' : '480px'} width={'100%'} threshold={0.5} key={`${title}-story-line-item-${index}`}>

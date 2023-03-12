@@ -1,0 +1,60 @@
+.section-header {
+    position: relative;
+
+    &__inner {
+        animation: fillFromLeft 1s backwards;
+        font-size: 72px;
+        text-transform: uppercase;
+        background-color: #F9C784;
+        max-width: 75%;
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    h1 {
+        text-align: right;
+        margin: 0 40px;
+    }
+
+    .mm-divider {
+        position: absolute;
+        height: 5px;
+        top: 50%;
+        z-index: -1;
+    }
+
+    @media (max-width: 968px) {
+
+
+        &__inner {
+            max-width: 100%;
+            font-size: 24px;
+            animation-name: fillFromLeftMobile;
+
+            h1 {
+                text-align: center;
+            }
+
+        }
+    }
+}
+
+@keyframes fillFromLeft {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes fillFromMobile {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}

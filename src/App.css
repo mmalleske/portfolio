@@ -97,22 +97,4 @@ html {
   }
 }
 
-@keyframes fillFromLeft {
-  0% {
-    width: 0%;
-  }
 
-  100% {
-    width: 50%;
-  }
-}
-
-@keyframes fillFromMobile {
-  0% {
-    width: 0%;
-  }
-
-  100% {
-    width: 100%;
-  }
-}
