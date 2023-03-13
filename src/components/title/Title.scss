@@ -18,6 +18,12 @@
     }
   }
 
+  a {
+    text-decoration: none;
+    color: inherit;
+    padding-top: 1000px;
+  }
+
   &__links {
     position: absolute;
     display: flex;
@@ -37,6 +43,11 @@
     flex-direction: column;
     justify-content: flex-end;
     animation: slideInFromTop 1s backwards .5s;
+    transition: background-color .3s;
+    
+    &:hover {
+      background-color: #fff;
+    }
 
     p {
       rotate: 90deg;
@@ -156,7 +167,6 @@
 
 
     h1 {
-      // transform: translateX(2000px);
       animation: slideFromRight 1s forwards;
     }
 
@@ -167,7 +177,6 @@
     background-color: #F9C784;
 
     h1 {
-      // transform: translateX(-2000px);
       animation: slideFromLeft 1s backwards;
       animation-delay: 0.5s;
     }

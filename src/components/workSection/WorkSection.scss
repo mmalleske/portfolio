@@ -1,4 +1,6 @@
 .mm-work-section-v2 {
+    margin-bottom: 80px;
+
     &:nth-child(even) {
         background-color: #f7f7f7;
     }
@@ -29,7 +31,6 @@
         flex-wrap: wrap;
         margin: 40px auto;
         max-width: 800px;
-
 
         img {
             max-height: 80px;

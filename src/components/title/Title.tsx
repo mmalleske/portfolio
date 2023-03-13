@@ -12,19 +12,19 @@ const Title: React.FC<TitleProps> = () => {
     <div className="mm-title-v1">
       <div className="mm-title-v1__links">
         <div className="mm-title-v1__link">
-          <p>Skills</p>
+          <a href="#skills"><p>Skills</p></a>
         </div>
         <div className="mm-title-v1__link">
-          <p>Work</p>
+          <a href="#work"><p>Work</p></a>
         </div>
         <div className="mm-title-v1__link">
-          <p>Volunteer</p>
+          <a href="#volunteer"><p>Volunteer</p></a>
         </div>
         <div className="mm-title-v1__link">
-          <p>Personal</p>
+          <a href="#personal"><p>Personal</p></a>
         </div>
         <div className="mm-title-v1__link">
-          <p>About</p>
+          <a href="#about"><p>About</p></a>
         </div>
       </div>
       <div className="mm-title-v1__inner">
