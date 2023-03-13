@@ -56,11 +56,18 @@
                         background-color: #68B0AB;
                         animation: fillProgress 1s backwards 1s;
                     }
-                    
+
                 }
             }
 
         }
+
+        
+    }
+
+    &__technologies {
+        max-width: 800px;
+        margin: 40px auto;
     }
 
     @media(max-width: 968px) {
@@ -74,9 +81,11 @@
     @keyframes fillProgress {
         0% {
             width: 0;
-        } 100% {
+        }
+
+        100% {
             width: 100%;
-        }        
+        }
     }
 }
 

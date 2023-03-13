@@ -94,7 +94,13 @@ function SkillsSection() {
                     <img alt="tech-icon" src={require("../../assets/images/rabbitmqlogo.png")} />
                     <img alt="tech-icon" src={require("../../assets/images/dockerlogo.webp")} />
                     <img alt="tech-icon" src={require("../../assets/images/kubelogo.png")} />
-                    <img alt="tech-icon" src={require("../../assets/images/grpc-icon-color.png")} />
+                    <img alt="tech-icon" src={require("../../assets/images/grpc-icon-color.png")} />                    
+                    <img alt="tech-icon" src={require("../../assets/images/sqllogo.png")} />
+                    <img alt="tech-icon" src={require("../../assets/images/retool.png")} />
+                    <img alt="tech-icon" src={require("../../assets/images/aws-logo-square.png")} />
+                    <img alt="tech-icon" src={require("../../assets/images/photoshop.png")} />
+                    <img alt="tech-icon" src={require("../../assets/images/unitylogo.png")} />
+                    <img alt="tech-icon" src={require("../../assets/images/3dsmaxlogo.png")} />
                     <img alt="tech-icon" src={require("../../assets/images/AirflowLogo.png")} />
                 </div>
             </LazyLoad>
