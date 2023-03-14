@@ -1,6 +1,6 @@
 .mm-storyline {
-    padding-bottom: 40px;
-    padding-top: 40px;
+    // padding-bottom: 40px;
+    // padding-top: 40px;
 
     &:nth-child(even) {
         background-color: #f7f7f7;
@@ -136,11 +136,11 @@
 
         &__title {
             max-width: 100%;
-            // text-align: center;
             animation: fillFromLeftMobile 1s backwards;
 
             h2 {
                 font-size: 20px;
+                animation: fade-in 1s backwards;
             }
         }
 
@@ -152,11 +152,9 @@
             }
 
             &__content {
-
                 img {
                     max-width: 350px;
                 }
-
             }
 
         }
@@ -167,21 +165,7 @@
         }
 
         &__line {
-            display: block;
-
-            .circle {
-                animation-delay: .3s;
-            }
-
-            .circle:first-child {
-                display: none;
-            }
-
-            .bottom-line,
-            .bottom-line-mask,
-            .top-line {
-                display: none;
-            }
+            display: none;           
         }
 
     }

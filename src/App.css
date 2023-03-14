@@ -8,8 +8,9 @@ html {
   scroll-behavior:smooth;
 }
 
-.App section {
-  height: 100vh;
+.App .mm-section {
+  /* height: 100vh; */
+  margin-bottom: 80px;
   overflow-y: hidden;
 }
 

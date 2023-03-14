@@ -65,7 +65,7 @@ function SkillsSection() {
     ];
 
     return (
-        <div className="mm-skills-section-v2">
+        <div className="mm-skills-section-v2 mm-section">
             <div className="mm-skills-section-v2__languages">
                 <LazyLoad height={150} width={'100%'} threshold={0.5}>
                     <div className="mm-skills-section-v2__subtitle">
@@ -89,7 +89,7 @@ function SkillsSection() {
                     <div className="underline" />
                 </div>
             </LazyLoad>
-            <LazyLoad height={windowWidth > 968 ? '300px' : '480px'} width={'100%'} threshold={0.5}>
+            <LazyLoad height={"auto"} width={'100%'} threshold={0.5}>
                 <div className="mm-work-section-v2__technologies">
                     <img alt="tech-icon" src={require("../../assets/images/rabbitmqlogo.png")} />
                     <img alt="tech-icon" src={require("../../assets/images/dockerlogo.webp")} />
