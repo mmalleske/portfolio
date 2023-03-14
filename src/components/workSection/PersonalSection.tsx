@@ -35,14 +35,14 @@ function PersonalSection() {
     ];
 
     return (
-        <div className="mm-work-section-v2">
+        <div className="mm-work-section-v2 mm-section">
             <StoryLine title='Harbinger Sky' items={items} />
             <div className="mm-work-section-v2__bottom">
                 <Button href="http://tinsoldiergames.com" target="_blank" type="primary" icon={<RightCircleOutlined />}>
                     Visit Site
                 </Button>
             </div>
-            <LazyLoad height={windowWidth > 968 ? '300px' : '480px'} width={'100%'} threshold={0.5}>
+            <LazyLoad height={"auto"} width={'100%'} threshold={0.5}>
                 <div className="mm-work-section-v2__technologies">
                     <img alt="tech-icon" src={require("../../assets/images/unitylogo.png")} />
                     <img alt="tech-icon" src={require("../../assets/images/photoshop.png")} />

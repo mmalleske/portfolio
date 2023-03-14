@@ -31,7 +31,7 @@ const StoryLine: React.FC<StoryLineProps> = ({ items, id, title = "Ojo Labs" }) 
                 </div>
             </LazyLoad>
             {items && items.map((item: StoryLineItemProps, index: number) => (
-                <LazyLoad height={windowWidth > 968 ? '300px' : '480px'} width={'100%'} threshold={0.5} key={`${title}-story-line-item-${index}`}>
+                <LazyLoad height={"auto"} width={'100%'} threshold={0.25} key={`${title}-story-line-item-${index}`}>
                     {windowWidth > 968 && index % 2 === 0 ? (
                         <Row className="mm-storyline__item">
                             <Col span={12}>

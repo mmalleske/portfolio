@@ -47,7 +47,7 @@ function OjoSection() {
     ];
 
     return (
-        <div className="mm-work-section-v2">
+        <div className="mm-work-section-v2 mm-section">
             <StoryLine title='Ojo Labs' items={ojoItems} />
             <div className="mm-work-section-v2__bottom">
                 <YouTube className="mm-yt" opts={youtubeOptions} videoId="7otxRER8J1E" />
@@ -55,7 +55,7 @@ function OjoSection() {
                     Visit Site
                 </Button>
             </div>
-            <LazyLoad height={windowWidth > 968 ? '300px' : '480px'} width={'100%'} threshold={0.5}>
+            <LazyLoad height={"auto"} width={'100%'} threshold={0.5}>
                 <div className="mm-work-section-v2__technologies">
                     <img alt="tech-icon" src={require("../../assets/images/reactlogo.jpeg")} />
                     <img alt="tech-icon" src={require("../../assets/images/laravel.png")} />

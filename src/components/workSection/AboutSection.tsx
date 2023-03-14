@@ -4,7 +4,7 @@ import "./AboutSection.scss";
 
 const AboutSection = () => {
     return (
-        <LazyLoad height={"100vh"} threshold={0.3}>
+        <LazyLoad height={"auto"} threshold={0.3}>
             <div className="about">
                 <div className="about__bars about__bars-top">
                     <div className="about__bars__bar" />

@@ -1,6 +1,6 @@
 .mm-storyline {
     // padding-bottom: 40px;
-    // padding-top: 40px;
+    padding-top: 40px;
 
     &:nth-child(even) {
         background-color: #f7f7f7;
@@ -154,6 +154,7 @@
             &__content {
                 img {
                     max-width: 350px;
+                    margin: 40px 0;
                 }
             }
 
