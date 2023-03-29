@@ -1,39 +1,15 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9b1476a7.css",
-    "main.js": "/portfolio/static/js/main.0be19c85.js",
+    "main.css": "/portfolio/static/css/main.2572ce7e.css",
+    "main.js": "/portfolio/static/js/main.fc8dbc8d.js",
     "static/js/787.128fc6e9.chunk.js": "/portfolio/static/js/787.128fc6e9.chunk.js",
-    "static/media/about.jpeg": "/portfolio/static/media/about.b62a2813708e160aa9fd.jpeg",
-    "static/media/ojo.png": "/portfolio/static/media/ojo.42ac88580a30b1fc1cda.png",
-    "static/media/idx.png": "/portfolio/static/media/idx.dda5d42bbbc6a5663626.png",
-    "static/media/rspromo.png": "/portfolio/static/media/rspromo.5f85280d648432f4f2e2.png",
-    "static/media/digs-maintenance-checklist.png": "/portfolio/static/media/digs-maintenance-checklist.6b4b343ee2d245367a5c.png",
-    "static/media/agencypromo.png": "/portfolio/static/media/agencypromo.14a8207bd87a7b13ca60.png",
-    "static/media/aws-logo-square.png": "/portfolio/static/media/aws-logo-square.e647029ca19c3b762ace.png",
-    "static/media/code2college.jpeg": "/portfolio/static/media/code2college.d685ffbb451dc0e5b8a2.jpeg",
-    "static/media/digs01-2.png": "/portfolio/static/media/digs01-2.f61b3b7a1354d1556d7f.png",
-    "static/media/digs-et.jpg": "/portfolio/static/media/digs-et.6471fc471f3d78408af1.jpg",
-    "static/media/ember.png": "/portfolio/static/media/ember.d7bd9c0b104b0999897a.png",
-    "static/media/reactlogo.jpeg": "/portfolio/static/media/reactlogo.8692d9783c81bd68375a.jpeg",
-    "static/media/3dsmaxlogo.png": "/portfolio/static/media/3dsmaxlogo.173f45492de149ecc5e7.png",
-    "static/media/AirflowLogo.png": "/portfolio/static/media/AirflowLogo.b028904451fee565e7d7.png",
-    "static/media/csharp.png": "/portfolio/static/media/csharp.5a45dfbe7dbab84acddf.png",
-    "static/media/sqllogo.png": "/portfolio/static/media/sqllogo.aa605674ceb08a2796a2.png",
-    "static/media/grpc-icon-color.png": "/portfolio/static/media/grpc-icon-color.324ba7ae7c6c9a3300af.png",
-    "static/media/reason.png": "/portfolio/static/media/reason.964395fc0f868b23357b.png",
-    "static/media/unitylogo.png": "/portfolio/static/media/unitylogo.4859d0b4dcd6e8efd436.png",
-    "static/media/railslogo.png": "/portfolio/static/media/railslogo.a272444fee188c3c05c4.png",
-    "static/media/laravel.png": "/portfolio/static/media/laravel.b5f3fe102f2ba212560a.png",
-    "static/media/dockerlogo.webp": "/portfolio/static/media/dockerlogo.50ef259c2ba21b66c115.webp",
-    "static/media/photoshop.png": "/portfolio/static/media/photoshop.d8c8149f0dbe859577e4.png",
-    "static/media/kubelogo.png": "/portfolio/static/media/kubelogo.34ff5c61998c6ab09210.png",
     "index.html": "/portfolio/index.html",
-    "main.9b1476a7.css.map": "/portfolio/static/css/main.9b1476a7.css.map",
-    "main.0be19c85.js.map": "/portfolio/static/js/main.0be19c85.js.map",
+    "main.2572ce7e.css.map": "/portfolio/static/css/main.2572ce7e.css.map",
+    "main.fc8dbc8d.js.map": "/portfolio/static/js/main.fc8dbc8d.js.map",
     "787.128fc6e9.chunk.js.map": "/portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b1476a7.css",
-    "static/js/main.0be19c85.js"
+    "static/css/main.2572ce7e.css",
+    "static/js/main.fc8dbc8d.js"
   ]
 }
